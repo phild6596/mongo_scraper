@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const Notes = require("./notes.js");
+const Note = require("./notes.js");
 
 let Schema = mongoose.Schema;
 
@@ -22,10 +22,10 @@ let ArticleSchema = new Schema({
     },
     notes: [{
         type: Schema.Types.ObjectId,
-        ref: "Notes"
+        ref: "Note"
     }]
 });
 
-let Articles = mongoose.model("Articles", ArticleSchema);
+let Article = mongoose.model("Article", ArticleSchema);
 
-module.exports = Articles;
+module.exports = Article;
