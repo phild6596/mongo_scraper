@@ -6,8 +6,8 @@ const request = require("request");
 const cheerio = require("cheerio");
 const path = require("path");
 const exphbs = require("express-handlebars");
-//const Notes = require("./models/notes.js");
-//const Articles = require("./models/articles.js");
+const Notes = require("./models/notes.js");
+const Articles = require("./models/articles.js");
 
 const PORT = process.env.PORT || 3000;
 
